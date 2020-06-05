@@ -1,0 +1,7 @@
+const app = require('../app');
+const config = require('../config');
+
+app.listen(config.port, config.host, function (err) {
+  if (err) throw err
+  console.log(new URL('http://' + config.host + ':' + config.port).href)
+});
