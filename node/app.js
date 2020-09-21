@@ -36,6 +36,7 @@ app.use((req, res, next) => {
 //静态资源
 app.use('/pakchoi/public', express.static(path.join(__dirname, 'public')))
 
+
 // 授权登录中间件
 app.use(userController.authToken.bind(userController))
 

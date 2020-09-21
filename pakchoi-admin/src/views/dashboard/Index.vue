@@ -18,10 +18,10 @@ export default {
   },
   mounted() {},
   methods: {
-    getlist() {
+    getlist() {0
       arr = [];
       for (let index = 0; index < 43; index++) {
-        arr.push(Math.floor(Math.random() * -2) + 3);
+        arr.push(Math.floor(Math.random() * (43-1)+43);
       }
       this.list = arr;
     },

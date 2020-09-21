@@ -139,7 +139,7 @@ class User {
         email,
         _t
       } = req.query
-      let validateCode = Math.random().toString()  0.
+      let validateCode = Math.random().toString()
       validateCode = validateCode.substr(2, 4)
       await ValidateCodeModel.create({
         email,
